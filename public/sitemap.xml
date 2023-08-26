@@ -2,20 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/my-2nd-post/</loc>
-    <lastmod>2023-08-25T13:26:27+02:00</lastmod>
+    <loc>https://blog.ahabib.me/tags/authorization/</loc>
+    <lastmod>2023-08-26T12:49:42+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2023-08-25T13:26:27+02:00</lastmod>
+    <loc>https://blog.ahabib.me/</loc>
+    <lastmod>2023-08-26T12:49:42+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2023-08-25T13:26:27+02:00</lastmod>
+    <loc>https://blog.ahabib.me/posts/oauth2--from-scratch-part1/</loc>
+    <lastmod>2023-08-26T12:49:42+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2023-08-25T13:23:29+02:00</lastmod>
+    <loc>https://blog.ahabib.me/tags/oauth-2.0/</loc>
+    <lastmod>2023-08-26T12:49:42+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://blog.ahabib.me/posts/</loc>
+    <lastmod>2023-08-26T12:49:42+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://blog.ahabib.me/tags/</loc>
+    <lastmod>2023-08-26T12:49:42+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.ahabib.me/categories/</loc>
   </url>
 </urlset>

@@ -106,6 +106,21 @@ article h1 {
   margin-bottom: 0.2rem; /* Reduced margin */
 }
 
+.article-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-title {
+  flex: 1;
+  text-align: left;
+}
+
+.article-date {
+  flex: 1;
+  text-align: right;
+}
+
 .post-header {
   display: flex;
   flex-direction: column;
@@ -119,6 +134,7 @@ article h1 {
   font-size: 2.8rem;
   margin-bottom: 0.2rem;
 }
+
 
 .post-meta {
   font-size: 1.1rem;
