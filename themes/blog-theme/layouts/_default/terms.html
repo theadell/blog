@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1>All Tags</h1>
+  <ul>
+    {{ range $key, $value := .Data.Terms }}
+      <li>
+        <a href="{{ $value.Page.Permalink }}">{{ $key }}</a> ({{ $value.Count }})
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

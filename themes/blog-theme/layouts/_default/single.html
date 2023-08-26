@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <article>
+    <header class="post-header">
+      <h1>{{ .Title }}</h1>
+      <p class="post-meta">
+        {{ .Date.Format "January 2, 2006" }} &middot; {{ .ReadingTime }} min read
+      </p>
+      <div class="tags">
+        {{ with .Params.tags }}
+          <strong></strong>
+          {{ range . }}
+            <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> 
+          {{ end }}
+        {{ end }}
+      </div>
+    </header>
+
+    <section class="post-content">
+      {{ .Content }}
+    </section>
+
+    <footer>
+      <p>
+        <a href="{{ "/" }}">← Back to Home</a>
+      </p>
+    </footer>
+  </article>
+{{ end }}

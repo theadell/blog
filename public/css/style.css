@@ -1,0 +1,127 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply background and font settings to the body */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+header nav {
+  font-size: 1.2rem;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+}
+
+/* Main Content */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #f4f4f4;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+
+/* Small Text */
+small {
+  font-size: 0.8rem;
+}
+
+/* Separator */
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add some vertical space between posts */
+.post + .post {
+  margin-top: 3rem;
+}
+
+article h1 {
+  font-size: 2.8rem; /* Slightly reduced from 3rem */
+  margin-bottom: 0.2rem; /* Reduced margin */
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally */
+  justify-content: center; /* Center the items vertically */
+  text-align: center; /* Center the text within each element */
+  margin-bottom: 2rem; /* Add some space below the header */
+}
+
+article h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.post-meta {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}

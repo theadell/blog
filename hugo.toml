@@ -1,0 +1,4 @@
+baseURL = 'https://blog.ahabib.me/'
+languageCode = 'en-us'
+title = 'Blog'
+theme = 'blog-theme'

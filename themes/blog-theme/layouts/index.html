@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <section id="intro">
+        <h1>!Adel</h1>
+        <p>Welcome to my blog! This is a space where I share my thoughts, tutorials, and insights about programming. Feel free to explore!</p>
+    </section>
+
+    <section id="recent-articles">
+        <h2>Recent Articles</h2>
+        <ul>
+            {{ range first 5 (where .Site.RegularPages "Section" "eq" "posts") }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <small> - {{ .Date.Format "January 2, 2006" }}</small>
+                </li>
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}
