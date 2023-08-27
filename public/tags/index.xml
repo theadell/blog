@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blog</title>
+    <title>Tags on Blog!Adel</title>
     <link>https://blog.ahabib.me/tags/</link>
-    <description>Recent content in Tags on Blog</description>
+    <description>Recent content in Tags on Blog!Adel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 26 Aug 2023 12:49:42 +0200</lastBuildDate><atom:link href="https://blog.ahabib.me/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Authorization</title>
-      <link>https://blog.ahabib.me/tags/authorization/</link>
-      <pubDate>Sat, 26 Aug 2023 12:49:42 +0200</pubDate>
-      
-      <guid>https://blog.ahabib.me/tags/authorization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OAuth-2.0</title>
-      <link>https://blog.ahabib.me/tags/oauth-2.0/</link>
-      <pubDate>Sat, 26 Aug 2023 12:49:42 +0200</pubDate>
-      
-      <guid>https://blog.ahabib.me/tags/oauth-2.0/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://blog.ahabib.me/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
