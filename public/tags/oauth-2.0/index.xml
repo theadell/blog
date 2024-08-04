@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OAuth-2.0 on Blog</title>
-    <link>https://blog.ahabib.me/tags/oauth-2.0/</link>
-    <description>Recent content in OAuth-2.0 on Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>OAuth-2.0 on Blog!Adel</title>
+    <link>http://localhost:1313/tags/oauth-2.0/</link>
+    <description>Recent content in OAuth-2.0 on Blog!Adel</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Aug 2023 12:49:42 +0200</lastBuildDate><atom:link href="https://blog.ahabib.me/tags/oauth-2.0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 12:49:42 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/oauth-2.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OAuth 2.0 From Scratch: Part 1</title>
-      <link>https://blog.ahabib.me/posts/oauth2--from-scratch-part1/</link>
+      <link>http://localhost:1313/posts/oauth2--from-scratch-part1/</link>
       <pubDate>Sat, 26 Aug 2023 12:49:42 +0200</pubDate>
-      
-      <guid>https://blog.ahabib.me/posts/oauth2--from-scratch-part1/</guid>
-      <description></description>
+      <guid>http://localhost:1313/posts/oauth2--from-scratch-part1/</guid>
+      <description>In this article, I aim to demystify OAuth 2.0—an internet standard that often seems elusive. My objective is to provide you with a comprehensive understanding of its purpose, use-cases, weaknesses, and strengths. With this knowledge, you&amp;rsquo;ll be better equipped to make informed decisions and navigate the landscape of OAuth with agility.&#xA;What is OAuth 2.0 and why should I care? 42function helloWorld() { 43 console.log(&amp;#34;Hello, world!&amp;#34;); 44} 45function goodbyeWorld() { 46 console.</description>
     </item>
-    
   </channel>
 </rss>

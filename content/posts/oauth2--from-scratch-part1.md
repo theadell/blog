@@ -9,3 +9,6 @@ description= "In this blog post I try to explain the OAuth 2.0 Authorization fra
 In this article, I aim to demystify OAuth 2.0—an internet standard that often seems elusive. My objective is to provide you with a comprehensive understanding of its purpose, use-cases, weaknesses, and strengths. With this knowledge, you'll be better equipped to make informed decisions and navigate the landscape of OAuth with agility.
 
 ## What is OAuth 2.0 and why should I care?
+
+
+
