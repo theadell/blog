@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: theadell/blog 
+  branch: main
+  base_url: https://decap.adelhub.com
+
+media_folder: "static/images/uploads"
+collections:
+  - name: "posts" # Identifier for the collection
+    label: "Blog Posts" # Display name in the CMS
+    folder: "content/posts" # Path to the folder containing post files
+    create: true # Allow creating new posts
+    slug: "{{slug}}" # Template for generating post slugs (file names)
+    extension: "md" # File extension for the markdown files
+    format: "toml-frontmatter" # Specifies the TOML front matter format
+    frontmatter_delimiter: "+++" # Delimiter for the TOML front matter
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Body", name: "body", widget: "markdown" }
+
