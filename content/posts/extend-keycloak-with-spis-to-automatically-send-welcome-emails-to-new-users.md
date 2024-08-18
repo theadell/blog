@@ -1,6 +1,6 @@
 +++
 title = "Extend Keycloak with SPIs to Automatically Send Welcome Emails to New Users"
-date = "2024-08-18T20:51:00.000Z"
+date = "2024-08-18T20:51:00Z"
 draft = true
 description = "In this article, we'll create a custom SPI event listener in Keycloak that automatically sends a welcome email whenever a new user registers. We'll start by setting up a Keycloak development environment using Docker, configure it via the Admin REST API, and use Mailtrap to test the email functionality. \n\n\n\n"
 tags = ["keycloak"]
