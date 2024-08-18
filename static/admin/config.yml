@@ -16,7 +16,7 @@ collections:
     frontmatter_delimiter: "+++" # Delimiter for the TOML front matter
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD",time_format: "HH:mm:ss", picker_utc: true }
       - { label: "Draft", name: "draft", widget: "boolean" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: [] }
