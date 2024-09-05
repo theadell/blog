@@ -1,0 +1,22 @@
+<section class="content-list content-list--{{ .Section }}" aria-labelledby="content-list-heading">
+    <div class="content-list__header">
+        <h2 id="content-list-heading" class="content-list__title">{{ .Title }}</h2>
+        <a href="{{ .Link }}" class="content-list__view-all">All {{ .Title }}</a>
+    </div>
+    {{ if gt (len .Items) 0 }}
+    <ul class="content-list__items" aria-label="List of recent {{ .Title | lower }}">
+        {{ range .Items }}
+        <li class="content-list__item">
+            <a class="content-list__item-title" href="{{ .Permalink }}" role="link" aria-label="Read {{ $.Title | lower }}: {{ .Title }}">
+                {{ .Title }}
+            </a>
+            <span class="content-list__item-date" aria-label="Published on {{ .Date.Format " January 2, 2006" }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </span>
+        </li>
+        {{ end }}
+    </ul>
+    {{ else }}
+    <p class="content-list__no-items-message">No recent {{ .Title | lower }} at the moment. Check back later or explore other sections!</p>
+    {{ end }}
+</section>

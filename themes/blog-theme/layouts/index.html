@@ -1,26 +1,9 @@
 {{ define "main" }}
-<section id="intro">
-    <h1>!Adel</h1>
-    <p>You might find something interesting or useful here. Feel free to look around and enjoy!</p>
-</section>
-<section id="recent-articles" aria-labelledby="recent-articles-heading">
-    <h2 id="recent-articles-heading">Recent Articles</h2>
-    {{ $articles := (where .Site.RegularPages "Section" "eq" "posts") }}
-    {{ if gt (len $articles) 0 }}
-        <ul aria-label="List of recent articles">
-            {{ range first 5 $articles }}
-            <li class="article-item">
-                <a class="article-title" href="{{ .Permalink }}" role="link" aria-label="Read article: {{ .Title }}">
-                    {{ .Title }}
-                </a>
-                <span class="article-date" aria-label="Published on {{ .Date.Format "January 2, 2006" }}">
-                    {{ .Date.Format "January 2, 2006" }}
-                </span>
-            </li>
-            {{ end }}
-        </ul>
-    {{ else }}
-        <p class="no-articles-message" >No recent articles at the moment. Check back later for updates or explore other sections of the blog!</p>
-    {{ end }}
-</section>
+
+{{ $articles := (where .Site.RegularPages "Section" "eq" "posts") }}
+{{ partial "list.html" (dict "Title" "Articles" "Items" $articles "Link" "/posts" "Section" "articles") }}
+
+{{/* partial "list.html" (dict "Title" "Notes" "Items" $notes "Link" "/notes" "Section" "notes") */}}
+{{/* partial "list.html" (dict "Title" "Projects" "Items" $projects "Link" "/projects" "Section" "projects") */}}
+
 {{ end }}

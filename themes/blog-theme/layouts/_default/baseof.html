@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
+{{- partial "head.html" . -}}
+
+<body>
+    {{- partial "header.html" . -}}
+    <div id="content">
         {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+    </div>
+    {{- partial "footer.html" . -}}
+
+    <script src="/js/theme-toggle.js"></script>
+    <script src="https://kit.fontawesome.com/ea73b4b82a.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

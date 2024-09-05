@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+
+{{ range .Pages.GroupByDate "2006" }}
+<section class="post-group">
+    <h3 class="post-group__year">{{ .Key }}</h3>
+    <ul class="post-group__list">
+        {{ range .Pages }}
+        <li class="post-group__item">
+            <h3 class="post-group__item-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+            <p class="post-group__item-description">{{ .Params.description }}</p>
+            <p class="post-group__item-date">Published on {{ .Date.Format "January 2, 2006" }}</p>
+
+            {{ if .Params.tags }}
+            <ul class="post-group__item-tags">
+                {{ range .Params.tags }}
+                <li class="post-group__item-tag">
+                    <a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}
+
+{{ end }}
