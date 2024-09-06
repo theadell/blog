@@ -14,6 +14,16 @@ Before diving in, make sure you have the following prerequisites in place:
 
 First, we create a new maven project 
 
+```sh
+mvn archetype:generate -DgroupId=com.adelhub.kc \
+-DartifactId=welcome-mail-listener \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DinteractiveMode=false
 ```
-mvn archetype:generate -DgroupId=com.adelhub.kc -DartifactId=welcome-mail-listener -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+and then we do sth else 
+```go
+func main() {
+    fmt.Println("Hi")
+}
 ```

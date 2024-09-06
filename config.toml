@@ -1,10 +1,9 @@
-baseURL = 'https://blog.ahabib.me/'
+baseURL = 'https://adelhub.com/'
 languageCode = 'en-us'
 title = 'Blog!Adel'
 theme = 'blog-theme'
 [markup]
   [markup.highlight]
-    noClasses = false  
-    style = "monokai"           
+    codeFences = false      
 
     

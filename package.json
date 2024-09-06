@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "hugo && npx tsx post-build.ts",
+    "rehype": "npx tsx post-build.ts",
+    "serve": "hugo server --ignoreCache --disableFastRender --buildDrafts --buildFuture --buildExpired",
+    "watch": "chokidar 'content/**/*' 'layouts/**/*' 'static/**/*' 'data/**/*'  -c 'npm run post-process'",
+    "post-process": "tsx post-build.ts",
+    "dev": "concurrently \"npm run serve\" \"npm run watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shikijs/rehype": "^1.16.2",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^8.2.2",
+    "rehype": "^13.0.1",
+    "rehype-parse": "^9.0.0",
+    "rehype-stringify": "^10.0.0",
+    "shiki": "^1.16.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "unist-util-visit": "^5.0.0"
+  }
+}
