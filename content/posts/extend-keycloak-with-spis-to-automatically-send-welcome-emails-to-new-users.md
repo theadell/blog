@@ -839,7 +839,7 @@ Now, this is just a simple example, and admittedly, it's not the most optimized 
 
 You can check out all the code for this project on GitHub:
 
-[View the code on GitHub]('https://github.com/')
+[View the code on GitHub]('https://github.com/theadell/keycloak-spi-simple-weclome-email')
 
 If you’ve got any feedback, questions or suggestions, don’t hesitate to reach out to me!
 
