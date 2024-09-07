@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 {{- partial "head.html" . -}}
-
 <body>
     {{- partial "header.html" . -}}
     <div id="content">
@@ -9,7 +8,8 @@
     </div>
     {{- partial "footer.html" . -}}
 
-    <script src="/js/theme-toggle.js"></script>
+    {{ $js := resources.Get "js/theme-toggle.js" | minify }}
+    <script src="{{ $js.RelPermalink }}"></script>
     <script src="https://kit.fontawesome.com/ea73b4b82a.js" crossorigin="anonymous"></script>
 </body>
 

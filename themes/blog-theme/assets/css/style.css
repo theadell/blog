@@ -17,6 +17,8 @@ body {
   margin: 0 auto;
   max-width: 1100px;
   padding: 0 1rem;
+  box-sizing: border-box; 
+  overflow-x: hidden;
 }
 
 /* Typographic Scale for Headings */
@@ -228,7 +230,7 @@ pre {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100vw;
+  width: calc(100vw - 30px);
   height: 1px; 
   background-color: var(--color-border); 
   transform: translateX(-50%);
