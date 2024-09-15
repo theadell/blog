@@ -1,0 +1,82 @@
+/* Site Header */
+.site-header {
+  background-color: var(--color-background);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-content {
+  max-width: 900px; /* Max width matching the main content */
+  margin: 0 auto; /* Centers the navbar within the header */
+  padding: 0.5em 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.25rem; /* Slightly smaller logo size */
+  font-weight: 500; /* Less bold */
+  color: var(--color-text); /* Text color */
+  text-decoration: none;
+}
+
+/* Main Navigation Styles */
+.main-navigation {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: var(--color-text-muted); /* Muted text for non-active links */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    border 0.3s;
+}
+
+/* Active Link Style: Border and Subtle Color Difference */
+.nav-item .nav-link.active {
+  color: var(--color-text); /* Slightly stronger white */
+  border: 1px solid var(--color-border); /* Subtle border for active link */
+  border-radius: 5px; /* Rounded corners */
+  background-color: var(
+    --color-surface
+  ); /* Background to highlight active link */
+}
+
+.nav-item .nav-link:hover {
+  color: var(--color-text); /* Slight hover color for interactivity */
+  background-color: var(--color-surface); /* Light background */
+  border-radius: 5px; /* Keep the border radius on hover */
+}
+
+/* Theme Toggle Button */
+.theme-toggle-wrapper {
+  margin-left: 1.5rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+  color: var(--color-link);
+}

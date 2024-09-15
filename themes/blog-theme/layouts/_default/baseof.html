@@ -1,16 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-{{- partial "head.html" . -}}
-<body>
+  {{- partial "head.html" . -}}
+  <body>
     {{- partial "header.html" . -}}
-    <div id="content">
-        {{- block "main" . }}{{- end }}
-    </div>
-    {{- partial "footer.html" . -}}
-
-    {{ $js := resources.Get "js/theme-toggle.js" | minify }}
+    <div class="container" id="content">{{- block "main" . }}{{- end }}</div>
+    {{- partial "footer.html" . -}} {{ $js := resources.Get "js/theme-toggle.js" | minify }}
     <script src="{{ $js.RelPermalink }}"></script>
-    <script src="https://kit.fontawesome.com/ea73b4b82a.js" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>

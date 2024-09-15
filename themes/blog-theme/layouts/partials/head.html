@@ -15,9 +15,12 @@
         }
     </script>
 
-    {{ $css := resources.Get "css/style.css" | minify | fingerprint }}
-    <link href="{{ $css.RelPermalink }}" rel="stylesheet">
-
+    {{ $CSS := resources.Match "css/**.css" | resources.Concat "main.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" media="all">
+    
+    <link href="/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/fontawesome/css/solid.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="{{ " favicon.svg" | relURL }}">
 

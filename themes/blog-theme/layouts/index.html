@@ -1,9 +1,29 @@
 {{ define "main" }}
 
-{{ $articles := (where .Site.RegularPages "Section" "eq" "posts") }}
-{{ partial "list.html" (dict "Title" "Articles" "Items" $articles "Link" "/posts" "Section" "articles") }}
+<div class="hero-wrapper">
+  <header class="hero hero--index">
+    <h1 class="hero__title">Hi, I'm Adel</h1>
+    <p class="hero__description">
+      I'm a software engineer with a background in electrical and computer
+      engineering. I started this blog to share what I’m building, learning, and
+      exploring — both in programming and in life.
+    </p>
+    <p class="hero__description">
+      You'll find my thoughts on programming, technology, and the things I’m
+      figuring out along the way.
+    </p>
+  </header>
 
-{{/* partial "list.html" (dict "Title" "Notes" "Items" $notes "Link" "/notes" "Section" "notes") */}}
-{{/* partial "list.html" (dict "Title" "Projects" "Items" $projects "Link" "/projects" "Section" "projects") */}}
+  <div class="hero__decoration">
+    {{ $image := resources.Get "images/gopher.png" }} {{ $image :=
+    $image.Process "resize 200x" }}
+    <img src="{{ $image.RelPermalink }}" alt="Gopher" />
+  </div>
+</div>
 
-{{ end }}
+{{ $articles := (where .Site.RegularPages "Section" "eq" "posts") }} {{ partial
+"list.html" (dict "Title" "Articles" "Items" $articles "Link" "/posts" "Section"
+"articles") }} {{/* partial "list.html" (dict "Title" "Notes" "Items" $notes
+"Link" "/notes" "Section" "notes") */}} {{/* partial "list.html" (dict "Title"
+"Projects" "Items" $projects "Link" "/projects" "Section" "projects") */}} {{
+end }}

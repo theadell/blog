@@ -1,0 +1,80 @@
+/* About Me Section */
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 0;
+  margin: 0 auto;
+}
+
+/* Main hero block */
+.hero {
+  max-width: 70%;
+}
+
+.hero--index {
+  text-align: left;
+}
+
+.hero__title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero__description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+.hero__description a {
+  color: #007acc; /* Add your preferred link color */
+  text-decoration: none;
+}
+
+.hero__description a:hover {
+  text-decoration: underline;
+}
+
+/* Hero image on the right */
+.hero__decoration {
+  max-width: 30%; /* Ensure the image takes 35% of the width */
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .hero__decoration {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .hero__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero__title {
+    font-size: 2em;
+  }
+
+  .hero__description {
+    font-size: 1em;
+  }
+}

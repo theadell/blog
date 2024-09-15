@@ -82,8 +82,8 @@ function wrapPreWithDiv() {
       .use(rehypeParse, { fragment: true }) // Parse the HTML into an AST
       .use(rehypeShiki, {
         themes: {
-          light: "catppuccin-latte",
-          dark: "catppuccin-mocha",
+          light: "one-light",
+          dark: "ayu-dark",
         },
       })
       .use(wrapPreWithDiv)

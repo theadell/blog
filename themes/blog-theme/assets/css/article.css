@@ -1,0 +1,55 @@
+.article__header {
+    margin-bottom: 2rem;
+  }
+  
+  .article__title {
+    margin-bottom: 0.5rem;
+  }
+  
+  .article__description {
+    color: inherit;
+    margin: 0 1.5rem;
+  }
+  
+  /* Meta and Tags grouped */
+  .article__meta-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: inherit;
+  }
+  
+  .article__meta {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .article__tag {
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .article__tag:hover {
+    text-decoration: underline;
+  }
+  
+  .article__content {
+    margin: 2rem 0;
+    line-height: 1.7;
+  }
+  
+  .article__footer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .article__back-link {
+    text-decoration: none;
+  }
+  
+  .article__back-link:hover {
+    text-decoration: underline;
+  }  
