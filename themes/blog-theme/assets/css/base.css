@@ -170,6 +170,8 @@ code:not(.shiki code) {
 pre {
   padding: 1rem;
   overflow-x: auto;
+  border: 0.8px solid var(--color-border);
+  border-radius: 0.5rem;
 }
 
 .code-adaptive {
