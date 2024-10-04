@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
   {{- partial "head.html" . -}}
   <body>
     {{- partial "header.html" . -}}
     <div class="container" id="content">{{- block "main" . }}{{- end }}</div>
-    {{- partial "footer.html" . -}} {{ $js := resources.Get "js/theme-toggle.js" | minify }}
+    {{- partial "footer.html" . -}} {{ $js := resources.Get "js/theme-toggle.js"
+    | minify }}
     <script src="{{ $js.RelPermalink }}"></script>
   </body>
 </html>
