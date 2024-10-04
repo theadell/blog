@@ -5,7 +5,11 @@ theme = 'blog-theme'
 [markup]
   [markup.highlight]
     codeFences = false      
-
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      attribute = true
+    [markup.goldmark.renderer]
+      unsafe = true
 [menu]
   [[menu.main]]
     name = "Home"
@@ -23,3 +27,4 @@ theme = 'blog-theme'
     name = "About"
     url = "/about"
     weight = 4
+
